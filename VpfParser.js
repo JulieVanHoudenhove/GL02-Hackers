@@ -152,32 +152,44 @@ class VpfParser {
      * <latlng> ::= "latlng: " [float],[float]
      */
     latlng(input) {
-        this.expect("latlng", input);
-        const curSymbol = this.next(input);
-        const matched = curSymbol.match(/(\d+(\.\d+)?);(\d+(\.\d+)?)/);
-        if (matched) {
-            return { lat: parseFloat(matched[1]), lng: parseFloat(matched[3]) };
+        const [lat, lng] = input[1].split(';').map(coord => coord.trim());
+        if (isNaN(parseFloat(lat)) || isNaN(parseFloat(lng))) {
+            throw new Error('Invalid latlng format');
         }
-        this.errMsg("Invalid latlng", input);
+        return { lat: parseFloat(lat), lng: parseFloat(lng) };
     }
 
     /**
      * <note> ::= "note: " [0-5]
      */
-    note(input, curPoi) {
-        if (this.check("note", input)) {
-            this.expect("note", input);
-            const curSymbol = this.next(input);
-            const matched = curSymbol.match(/\d/);
-            if (matched) {
-                curPoi.addRating(parseInt(matched[0]));
-                if (input.length > 0) {
-                    this.note(input, curPoi);
-                }
-            } else {
-                this.errMsg("Invalid note", input);
-            }
+    note(input, poi) {
+        const rating = parseInt(input[1], 10);
+        if (rating >= 0 && rating <= 5) { // Note valide entre 0 et 5
+            poi.ratings.push(rating);
+            poi.lastUpdate = new Date().toLocaleDateString('fr-FR'); // Mise à jour de lastUpdate
         }
+    }
+
+    parsePOI(input) {
+        const lines = input.split('\r\n');
+        const poi = { name: "", lat: null, lng: null, ratings: [] };
+
+        lines.forEach(line => {
+            if (line.startsWith("name: ")) {
+                poi.name = line.split("name: ")[1].trim();
+            } else if (line.startsWith("latlng: ")) {
+                const [lat, lng] = line.split("latlng: ")[1].split(';').map(parseFloat);
+                poi.lat = lat;
+                poi.lng = lng;
+            } else if (line.startsWith("note: ")) {
+                const rating = parseInt(line.split("note: ")[1], 10);
+                if (rating >= 0 && rating <= 5) {
+                    poi.ratings.push(rating);
+                }
+            }
+        });
+
+        return poi;
     }
 }
 

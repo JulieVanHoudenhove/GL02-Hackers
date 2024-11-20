@@ -11,6 +11,7 @@ class POI {
         this.lat = lat;
         this.lng = lng;
         this.ratings = Array.isArray(ratings) ? ratings : [ratings];
+        this.lastUpdate = null;  // Initialiser lastUpdate à null
     }
 
     /**
@@ -29,6 +30,7 @@ class POI {
     addRating(rating) {
         if (!isNaN(rating)) {
             this.ratings.push(parseFloat(rating));
+            this.lastUpdate = new Date().toLocaleDateString('fr-FR'); // Mettre à jour la date
         } else {
             console.error(`Invalid rating: ${rating}`);
         }
