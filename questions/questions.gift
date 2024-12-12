@@ -1,0 +1,119 @@
+//Liste de questions
+::Question 1::Quelle est la couleur du ciel ? {
+=Bleu#Bonne réponse
+~Rouge#Mauvaise réponse
+~Vert#Mauvaise réponse
+}
+
+::Question 2::La Terre est-elle ronde ? {
+TRUE#Bonne réponse
+}
+
+::Question 3::Associer les capitales aux pays : {
+=Paris -> France#Bonne réponse
+=Berlin -> Allemagne#Bonne réponse
+=Tokyo -> Japon#Bonne réponse
+}
+
+::Question 4::Le soleil se lève à l'[Est] et se couche à l'[Ouest].
+
+::Question 5::Combien font 7 multiplié par 6 ? {#42}
+
+::Question 6::Décrivez l'importance de la photosynthèse dans la nature.
+
+::Question 7::Quelle est la capitale de l'Espagne ? {
+=Madrid#Bonne réponse
+~Barcelone
+~Lisbonne
+}
+
+::Question 8::La lune tourne autour du soleil ? {
+FALSE#Mauvaise réponse
+}
+
+::Question 9::Le symbole chimique de l'eau est H2O ? {
+TRUE#Bonne réponse
+}
+
+::Question 10::Associer les œuvres à leurs auteurs : {
+=Le Petit Prince -> Antoine de Saint-Exupéry
+=1984 -> George Orwell
+=La Peste -> Albert Camus
+}
+
+::Question 11::L'eau bout à [100] degrés Celsius.
+
+::Question 12::Quel est le produit de 8 x 5 ? {#40}
+
+::Question 13::Décrivez le processus de la digestion humaine.
+
+::Question 14::Quelle est la couleur du sang dans les veines ? {
+=Rouge foncé
+~Bleu
+~Vert
+}
+
+::Question 15::L'Australie est un continent ? {
+TRUE#Bonne réponse
+}
+
+::Question 16::Associer les symboles chimiques : {
+=Fe -> Fer
+=Na -> Sodium
+=Cl -> Chlore
+}
+
+::Question 17::Le Mont Everest est la plus haute montagne du monde ? {
+TRUE#Bonne réponse
+}
+
+::Question 18::Les mathématiques sont amusantes ? {
+TRUE
+FALSE
+}
+
+::Question 19::La photosynthèse produit de l'[oxygène].
+
+::Question 20::Combien font 10 au carré ? {#100}
+
+::Question 21::Quelle est la langue officielle du Brésil ? {
+=Portugais#Bonne réponse
+~Espagnol
+~Anglais
+}
+
+::Question 22::Associer les animaux à leur cri : {
+=Chien -> Aboie
+=Chat -> Miaule
+=Vache -> Meugle
+}
+
+::Question 23::Les humains ont-ils besoin d'eau pour survivre ? {
+TRUE#Bonne réponse
+}
+
+::Question 24::Quel est le symbole chimique de l'or ? {
+=Au#Bonne réponse
+~Ag
+~Cu
+}
+
+::Question 25::La Terre a [7] continents.
+
+::Question 26::Quel est le résultat de 25 / 5 ? {#5}
+
+::Question 27::Expliquez l'impact des réseaux sociaux sur la société moderne.
+
+::Question 28::Le kangourou est originaire d'Afrique ? {
+FALSE#Mauvaise réponse
+}
+
+::Question 29::Associer les couleurs primaires : {
+=Rouge -> Primaire
+=Bleu -> Primaire
+=Jaune -> Primaire
+}
+
+::Question 30::La vitamine C est importante pour renforcer le système immunitaire ? {
+TRUE#Bonne réponse
+}

@@ -1,0 +1,57 @@
+::Question 1::Quelle est la couleur du ciel ? {
+=Bleu#Bonne réponse
+~Rouge#Mauvaise réponse
+~Vert#Mauvaise réponse
+}
+
+::Question 2::La Terre est-elle ronde ? {
+TRUE#Bonne réponse
+}
+
+::Question 3::Associer les capitales aux pays : {
+=Paris -> France#Bonne réponse
+=Berlin -> Allemagne#Bonne réponse
+=Tokyo -> Japon#Bonne réponse
+}
+
+::Question 4::Le soleil se lève à l'[Est] et se couche à l'[Ouest].
+
+::Question 5::Combien font 7 multiplié par 6 ? {#42}
+
+::Question 6::Décrivez l'importance de la photosynthèse dans la nature.
+
+::Question 7::Quelle est la capitale de l'Espagne ? {
+=Madrid#Bonne réponse
+~Barcelone
+~Lisbonne
+}
+
+::Question 8::La lune tourne autour du soleil ? {
+FALSE#Bonne réponse
+}
+
+::Question 9::Le symbole chimique de l'eau est H2O ? {
+TRUE#Bonne réponse
+}
+
+::Question 10::Associer les œuvres à leurs auteurs : {
+=Le Petit Prince -> Antoine de Saint-Exupéry
+=1984 -> George Orwell
+=La Peste -> Albert Camus
+}
+
+::Question 11::L'eau bout à [100] degrés Celsius.
+
+::Question 12::Quel est le produit de 8 x 5 ? {#40}
+
+::Question 13::Décrivez le processus de la digestion humaine.
+
+::Question 14::Quelle est la couleur du sang dans les veines ? {
+=Rouge foncé
+~Bleu
+~Vert
+}
+
+::Question 15::L'Australie est un continent ? {
+FALSE#Bonne réponse
+}
